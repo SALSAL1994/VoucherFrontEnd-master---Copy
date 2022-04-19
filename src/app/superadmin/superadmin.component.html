@@ -1,0 +1,98 @@
+<div class="container1 d-flex flex-row">
+<div class="sidebarNavigation  ">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-4 bg-dark sidebar">
+          <div class="sidebar">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active"> <br >
+                    SUPERADMIN PANEL</a>
+              </li>
+              <div class="hr"></div>
+
+              <li class="nav-item">
+                <a
+                  routerLink="/superadmin/newcompany"
+                  class="nav-link align-middle px-0"
+                >
+               Create New Company
+                </a>
+              </li>
+              <hr />
+              <li>
+                <a
+                routerLink="/superadmin"
+                class="nav-link px-0 align-middle">
+                Create Admin
+                </a>
+              </li>
+              <hr />
+              <li>
+                <a routerLink="/superadmin/modification" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-table"></i>
+                  <span class="ms-1 d-none d-sm-inline">Modification</span></a
+                >
+              </li>
+              <hr />
+
+              <li>
+                <a
+                  routerLink="/superadmin/addplayer"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="fs-4 bi-bootstrap"></i>
+                  <span class="ms-1 d-none d-sm-inline">Add Player</span></a
+                >
+                <ul
+                  class="collapse nav flex-column ms-1"
+                  id="submenu2"
+                  data-bs-parent="#menu"
+                ></ul>
+              </li>
+              <hr />
+              <li>
+                <a
+                  routerLink="/superadmin"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="fs-4 bi-grid"></i>
+                  <span class="ms-1 d-none d-sm-inline">Products</span>
+                </a>
+                <ul
+                  class="collapse nav flex-column ms-1"
+                  id="submenu3"
+                  data-bs-parent="#menu"
+                ></ul>
+              </li>
+              <hr />
+              <li>
+                <a routerLink="/superadmin" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-people"></i>
+                  <span class="ms-1 d-none d-sm-inline">Customers</span>
+                </a>
+              </li>
+            </ul>
+            <hr />
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <!-- Calling SignOut() Api from AuthService -->
+            <!-- <li class="nav-item"> -->
+              <!-- <a class="nav-link" (click)="authService.SignOut()"> Log out </a> -->
+            <!-- </li> -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="routerOutlet ">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
