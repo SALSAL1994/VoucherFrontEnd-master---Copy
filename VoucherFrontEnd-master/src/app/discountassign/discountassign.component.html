@@ -1,0 +1,41 @@
+<form [formGroup]="discountform"  class= "form">
+
+<h1>company:</h1>
+    <div class="form-group">
+        <select class="form-control" formControlName="companyId">
+            <option *ngFor="let company of listcompany" [value]="company.id">
+                {{company.name}} 
+            </option>
+        </select>
+          </div>
+     <h1>players:</h1>
+      <div class="form-group ">
+        <select  class="form-control" formControlName="playerId">
+            <option *ngFor="let item of listData" [value]="item.id">
+                {{item.shortName}} 
+            </option> 
+        </select>
+          </div>
+
+
+          <h1>discount : </h1>
+          <div class="form-group ">
+
+         <input type="number" class="form-control" formControlName="number">
+
+        </div>
+
+         <h1>how many:</h1>
+          <div class="form-group ">
+
+         <input type="number" class="form-control" formControlName="number">
+
+        </div>
+    
+           
+        <button class="btn btn-block btn-warning"  type="submit">ASSIGN</button>
+        <!-- <div class="alert alert-warning" *ngIf="isLoggedIn">
+            <br>
+            Your user linked to the company  :)
+        </div> -->
+        </form>

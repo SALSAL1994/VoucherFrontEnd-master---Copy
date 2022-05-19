@@ -1,0 +1,28 @@
+.container{
+
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 2px;
+    min-width: 450px;
+min-height: 400px;
+
+}
+
+.form{
+    margin: 10px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.container1{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 2px;
+    min-width: 450px;
+min-height: 200px;
+
+}
